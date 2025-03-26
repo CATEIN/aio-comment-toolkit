@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "AIO Comment Toolkit",
+    "version": "1.0",
+    "description": "Toolkit for viewing and searching Adventures in Odyssey Club comments.",
+    "action": {
+      "default_icon": {
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+      }
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "permissions": [
+      "storage",
+      "activeTab",
+      "scripting",
+      "webRequest"
+    ],
+    "host_permissions": [
+      "https://app.adventuresinodyssey.com/*",
+      "https://fotf.my.site.com/*"
+    ]
+  }
+  

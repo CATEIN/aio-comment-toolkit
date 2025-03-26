@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AIO Comments</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Control Panel -->
+  <div id="controls" style="margin-bottom: 20px;">
+    <div>
+      <label for="commentPageId">Fetch from comment page:</label>
+      <input type="text" id="commentPageId" placeholder="Enter comment page ID">
+    </div>
+    <div>
+      <label for="pageNumber">Page number:</label>
+      <input type="number" id="pageNumber" min="1" value="1">
+    </div>
+    <div>
+      <label for="pageSize">Number of comments:</label>
+      <input type="number" id="pageSize" min="1" placeholder="e.g., 10">
+    </div>
+    <div>
+      <label for="filterUsername">Filter from username:</label>
+      <input type="text" id="filterUsername" placeholder="Enter username">
+    </div>
+    <div>
+      <label for="filterUserId">Filter from user ID:</label>
+      <input type="text" id="filterUserId" placeholder="Enter viewerProfileId">
+    </div>
+    <div>
+      <label for="filterWord">Filter from word:</label>
+      <input type="text" id="filterWord" placeholder="Enter word">
+    </div>
+    <div style="margin-top: 10px;">
+      <button id="fetchButton">Fetch Comments</button>
+      <button id="commentButton">Comment</button>
+    </div>
+  </div>
+
+  <!-- New Comment form (hidden by default) -->
+  <div id="newCommentForm" style="display:none; margin-bottom: 20px;">
+    <textarea id="newCommentText" maxlength="255" placeholder="Type your comment (max 255 characters)..." style="width:100%; box-sizing:border-box;"></textarea>
+    <div style="margin-top:5px;">
+      <button id="postCommentButton">Post Comment</button>
+      <button id="cancelCommentButton">Cancel</button>
+    </div>
+  </div>
+
+  <!-- Loading indicator (hidden by default) -->
+  <div id="loadingIndicator">
+    <img src="images/loading.gif" alt="Loading...">
+  </div>
+
+  <!-- Comments container -->
+  <div id="comments-container">
+    <!-- Comments will be loaded here -->
+  </div>
+  
+  <script src="index.js"></script>
+</body>
+</html>
