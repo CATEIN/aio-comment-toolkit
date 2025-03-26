@@ -1,7 +1,7 @@
 # aio-comment-toolkit
 Web extension for viewing and searching Adventures in Odyssey Club comments.
 
-##Features
+## Features
 
 -**View hundreds of comments without lag**
 
